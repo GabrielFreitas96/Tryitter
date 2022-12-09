@@ -4,10 +4,10 @@ using Tryitter.Models;
 
 namespace Tryitter.Repository
 {
-    public class TryitterRepository : DbContext, IRepository 
+    public class TryitterContext: DbContext, IContext
     {
-      public TryitterRepository(DbContextOptions<IRepository> options): base(options) { }
-      public TryitterRepository() { }
+      public TryitterContext(DbContextOptions<TryitterContext> options): base(options) { }
+      public TryitterContext() { }
       public DbSet<User> Users { get; set; }
       public DbSet<Post> Posts { get; set; }
 

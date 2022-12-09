@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Tryitter.Models;
 namespace Tryitter.Repository
 {
-    public interface IRepository
+    public interface IContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Post> Posts { get; set; }
