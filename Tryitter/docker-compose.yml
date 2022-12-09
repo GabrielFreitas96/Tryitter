@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  db:
+    container_name: Tryitter-DB
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    user: root
+    ports:
+        - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12!
