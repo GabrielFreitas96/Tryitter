@@ -65,3 +65,5 @@
 /Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/obj/Debug/net6.0/Tryitter.pdb
 /Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/obj/Debug/net6.0/Tryitter.genruntimeconfig.cache
 /Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/obj/Debug/net6.0/ref/Tryitter.dll
+/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/bin/Debug/net6.0/Humanizer.dll
+/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll

@@ -1,32 +1,26 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Tryitter.Repository;
 using Tryitter.Models;
 
 namespace Tryitter.Controllers;
 
+[ApiController]
+[Route("api")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly ITryitterRepository _repository; 
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ITryitterRepository repository)
     {
-        _logger = logger;
+        _repository = repository;
+    }
+    [HttpGet("teste")]
+    public IActionResult GetTeste()
+    {
+        return Ok("Está funcionando");
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 }
 
