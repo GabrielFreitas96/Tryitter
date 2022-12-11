@@ -74,7 +74,28 @@ namespace Tryitter.Repository
                   return null;
             }
         }
-        
+
+        public bool DeletePost(int id)
+        {
+            var post = _context.Posts.Find(id);
+            if (post == null) return false;
+            _context.Posts.Remove(post);
+
+            _context.SaveChanges();
+            return true;
+        }
+
+        public bool UpdatePost(int id, string content)
+        {
+            var post = _context.Posts.Find(id);
+            if (post == null) return false;
+
+            post.Content = content;
+            _context.SaveChanges();
+
+            return true;
+        }
+
 
     }
 }

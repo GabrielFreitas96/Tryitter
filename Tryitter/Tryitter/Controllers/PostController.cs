@@ -36,6 +36,22 @@ public class PostController : Controller
         if (createdPost == null) return BadRequest();
         return Created("Post Created", createdPost);
     }
-    
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        var isDeleted = _repository.DeletePost(id);
+        if (isDeleted) return Ok();
+        return BadRequest();
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, string? content)
+    {
+        var isUpdated = _repository.UpdatePost(id, content!);
+        if (isUpdated) return Ok();
+        return BadRequest();
+    }
+
 
 }

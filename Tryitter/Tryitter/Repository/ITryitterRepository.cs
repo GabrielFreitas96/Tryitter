@@ -13,6 +13,8 @@ namespace Tryitter.Repository
         bool UpdateUser(int id, string name, string email);
         Post? GetPost(int id);
         Post AddPost(string content, int userId);
+        bool DeletePost(int id);
+        bool UpdatePost(int id, string content);
         IEnumerable<Post> GetPosts();
     }
 }
