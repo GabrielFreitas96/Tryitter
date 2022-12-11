@@ -8,10 +8,12 @@ namespace Tryitter.Repository
     {
         IEnumerable<User> GetUsers();
         User? GetUser(int id);
+        User AddUser(string name, string email);
+        bool DeleteUser(int id);
+        bool UpdateUser(int id, string name, string email);
+        Post? GetPost(int id);
+        Post AddPost(string content, int userId);
         IEnumerable<Post> GetPosts();
-        EntityEntry<User> AddUser(User user);
-        public bool DeleteUser(int id);
-        public bool UpdateUser(int id, string name, string email);
     }
 }
 

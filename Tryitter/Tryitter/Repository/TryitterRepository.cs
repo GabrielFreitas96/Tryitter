@@ -21,14 +21,18 @@ namespace Tryitter.Repository
         {
             return _context.Users.Find(id);
         }
-        public EntityEntry<User>? AddUser(User user)
+        public User? AddUser(string name, string email)
         {
-            var userExists = _context.Users.FirstOrDefault(x => x.email == user.email) == null;
+            var userExists = _context.Users.FirstOrDefault(x => x.email == email) == null;
             if (userExists) return null;
             
-            var newUser = _context.Users.Add(user);
+            var newUser = _context.Users.Add(new User()
+            {
+                Name = name,
+                email = email
+            });
             _context.SaveChanges();
-            return newUser;
+            return newUser.Entity;
         }
 
         public bool DeleteUser(int id)
@@ -56,6 +60,30 @@ namespace Tryitter.Repository
         {
             return _context.Posts.ToList<Post>();
         }
+        public Post? GetPost(int id)
+        {
+            return _context.Posts.Find(id);
+        }
+
+        public Post? AddPost(string content, int userId)
+        {
+            try
+            {
+                var post = _context.Posts.Add(new Post()
+                {
+                    Content = content,
+                    UserId = userId
+                });
+                _context.SaveChanges();
+                return post.Entity;
+            }
+            catch
+            {
+                  return null;
+            }
+        }
+        
+
     }
 }
 

@@ -9,4 +9,3 @@ namespace Tryitter.Models
         public IEnumerable<Post> Posts { get; set; } = new List<Post>(); 
     }
 }
-

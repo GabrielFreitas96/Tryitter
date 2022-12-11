@@ -27,7 +27,4 @@
   <ItemGroup>
     <Folder Include="Repository\" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Controllers\PostController.cs" />
-  </ItemGroup>
 </Project>
