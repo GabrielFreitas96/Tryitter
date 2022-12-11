@@ -34,9 +34,12 @@ public class UserController : Controller
     [HttpPost]
     public IActionResult Create(string name, string email)
     {
-        var createdUser = _repository.AddUser(name, email);
-        if (createdUser == null) return BadRequest("Not created");
-        return Created("User created", createdUser);
+        _repository.AddUser(new User()
+        {
+            Name = name,
+            email = email
+        });
+        return Created("Created", $"Usuário {name} criado com sucesso!");
     }
 
     [HttpDelete("{id}")]

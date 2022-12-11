@@ -21,18 +21,10 @@ namespace Tryitter.Repository
         {
             return _context.Users.Find(id);
         }
-        public User? AddUser(string name, string email)
+        public void AddUser(User user)
         {
-            var userExists = _context.Users.FirstOrDefault(x => x.email == email) == null;
-            if (userExists) return null;
-            
-            var newUser = _context.Users.Add(new User()
-            {
-                Name = name,
-                email = email
-            });
+            _context.Users.Add(user);
             _context.SaveChanges();
-            return newUser.Entity;
         }
 
         public bool DeleteUser(int id)
