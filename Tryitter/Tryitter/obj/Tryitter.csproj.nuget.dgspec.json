@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj": {}
+    "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj": {
+    "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj",
+        "projectUniqueName": "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj",
         "projectName": "Tryitter",
-        "projectPath": "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj",
-        "packagesPath": "C:\\Users\\leool\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\obj\\",
+        "projectPath": "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj",
+        "packagesPath": "/Users/gabrielfreitas/.nuget/packages/",
+        "outputPath": "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leool\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/gabrielfreitas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -39,6 +39,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[6.0.6, )"
             },
@@ -80,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
