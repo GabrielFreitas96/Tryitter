@@ -32,12 +32,13 @@ public class UserController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(string name, string email)
+    public IActionResult Create(string name, string email, string password)
     {
         _repository.AddUser(new User()
         {
             Name = name,
-            email = email
+            Email = email,
+            Password = password
         });
         return Created("Created", $"Usuário {name} criado com sucesso!");
     }
@@ -53,7 +54,7 @@ public class UserController : Controller
     [HttpPut("{id}")]
     public IActionResult Update(int id, string? name, string email)
     {
-        var isUpdated = _repository.UpdateUser(id, name, email);
+        var isUpdated = _repository.UpdateUser(id, name!, email);
         if (isUpdated) return Ok();
         return BadRequest();
     }

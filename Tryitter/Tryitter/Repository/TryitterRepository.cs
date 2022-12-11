@@ -43,7 +43,7 @@ namespace Tryitter.Repository
             if (user == null) return false;
 
             user.Name = name.Length > 5 ? name : user.Name;
-            user.email = email.Length > 5 ? email : user.email;
+            user.Email = email.Length > 5 ? email : user.Email;
             _context.SaveChanges();
             
             return true;

@@ -11,13 +11,12 @@ namespace Tryitter.Repository
       public DbSet<Post> Posts { get; set; }
       public TryitterContext(DbContextOptions<TryitterContext> options) : base(options) { }
       public TryitterContext() { }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.EnableSensitiveDataLogging();
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=DESKTOP-PT1E588;Database=TryitterDb;User=sa;Password=123456");
+                optionsBuilder.UseSqlServer(@"Server=127.0.0.1;Database=TryitterDb;User=SA;Password=Password12!;");
             }
         }
     }
