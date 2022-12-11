@@ -17,7 +17,7 @@ namespace Tryitter.Repository
             optionsBuilder.EnableSensitiveDataLogging();
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=127.0.0.1;Database=TryitterDb;User=SA;Password=Password12!;");
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-PT1E588;Database=TryitterDb;User=sa;Password=123456");
             }
         }
     }

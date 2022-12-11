@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj": {}
+    "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj": {}
   },
   "projects": {
-    "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj": {
+    "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj",
+        "projectUniqueName": "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj",
         "projectName": "Tryitter",
-        "projectPath": "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/Tryitter.csproj",
-        "packagesPath": "/Users/gabrielfreitas/.nuget/packages/",
-        "outputPath": "/Users/gabrielfreitas/Repositorios/Aceleracao_C/Tryitter/Tryitter/Tryitter/obj/",
+        "projectPath": "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\Tryitter.csproj",
+        "packagesPath": "C:\\Users\\leool\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leool\\OneDrive\\Área de Trabalho\\c#\\projetoemdupla\\Tryitter\\Tryitter\\Tryitter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gabrielfreitas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\leool\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
