@@ -95,7 +95,13 @@ namespace Tryitter.Repository
 
             return true;
         }
+        public User Login(string email, string password)
+        {
+            var user = _context.Users.Where(p => p.Email == email && p.Password == password).FirstOrDefault();
+            user!.Password = "";
+            return user!;
 
+        }
 
     }
 }

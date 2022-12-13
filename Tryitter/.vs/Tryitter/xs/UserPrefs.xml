@@ -1,4 +1,45 @@
 ﻿<Properties StartupConfiguration="{1B947473-C9E2-4608-90B0-810399E9EC9C}|Default">
-  <MonoDevelop.Ide.ItemProperties.Tryitter FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tryitter/Controllers/PostController.cs">
+    <Files>
+      <File FileName="Tryitter/Program.cs" Line="31" Column="24" />
+      <File FileName="Tryitter/Tryitter.csproj" Line="19" Column="81" />
+      <File FileName="Tryitter/Repository/TryitterRepository.cs" Line="77" Column="1" />
+      <File FileName="Tryitter/Properties/launchSettings.json" Line="22" Column="29" />
+      <File FileName="Tryitter/Models/User.cs" Line="11" Column="6" />
+      <File FileName="Tryitter/Models/Post.cs" Line="15" Column="2" />
+      <File FileName="Tryitter/Controllers/PostController.cs" Line="14" Column="6" />
+      <File FileName="Tryitter/Repository/ITryitterRepository.cs" Line="22" Column="1" />
+      <File FileName="Tryitter/Controllers/UserController.cs" Line="20" Column="31" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Tryitter" expanded="True">
+            <Node name="Tryitter" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Tryitter" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.Tryitter PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
 </Properties>

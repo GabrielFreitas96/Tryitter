@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Tryitter.Repository;
 using Tryitter.Models;
+using Tryitter.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Tryitter.Controllers;
 
@@ -9,7 +11,7 @@ namespace Tryitter.Controllers;
 [Route("user")]
 public class UserController : Controller
 {
-    private readonly ILogger<UserController> _logger;
+    private readonly ILogger<UserController>? _logger;
     private readonly ITryitterRepository _repository; 
 
     public UserController(ITryitterRepository repository)
@@ -32,13 +34,14 @@ public class UserController : Controller
     }
 
     [HttpPost]
+    [AllowAnonymous]
     public IActionResult Create(string name, string email, string password)
     {
         _repository.AddUser(new User()
         {
             Name = name,
             Email = email,
-            Password = password
+            Password = GenerateHash.Generate(password),
         });
         return Created("Created", $"Usuário {name} criado com sucesso!");
     }
