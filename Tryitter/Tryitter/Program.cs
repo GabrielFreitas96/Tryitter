@@ -7,7 +7,6 @@ using Microsoft.OpenApi.Models;
 using Tryitter;
 using Tryitter.JWT;
 using Tryitter.Repository;
-using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -80,10 +79,14 @@ if (app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 
-app.UseRouting();
 
-app.UseAuthorization();
+
+app.UseRouting();
+// UseAuthentication sempre deve vir na frente do UseAuthorization
+// Primeiro se autentica e depois se pede autorização
 app.UseAuthentication();
+app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",

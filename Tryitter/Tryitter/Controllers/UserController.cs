@@ -19,6 +19,7 @@ public class UserController : Controller
         _repository = repository;
     }
     [HttpGet]
+    [Authorize]
     public IActionResult Get()
     {
         var users = _repository.GetUsers();
@@ -26,8 +27,13 @@ public class UserController : Controller
     }
     
     [HttpGet("{id}")]
+    [Authorize]
     public IActionResult GetById(int id)
     {
+        if(User.Identity.Name != Convert.ToString(id))
+        {
+            return Unauthorized($"{id} não logado");
+        }
         var user = _repository.GetUser(id);
         if (user == null) return NotFound("User not exists");
         return Ok(user);
@@ -47,16 +53,26 @@ public class UserController : Controller
     }
 
     [HttpDelete("{id}")]
+    [Authorize]
     public IActionResult Delete(int id)
     {
+        if (User.Identity.Name != Convert.ToString(id))
+        {
+            return Unauthorized($"{id} não logado");
+        }
         var isDeleted =  _repository.DeleteUser(id);
         if (isDeleted) return Ok();
         return BadRequest();
     }
 
     [HttpPut("{id}")]
+    [Authorize]
     public IActionResult Update(int id, string? name, string email)
     {
+        if (User.Identity.Name != Convert.ToString(id))
+        {
+            return Unauthorized($"{id} não logado");
+        }
         var isUpdated = _repository.UpdateUser(id, name!, email);
         if (isUpdated) return Ok();
         return BadRequest();

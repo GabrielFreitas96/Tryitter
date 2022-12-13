@@ -102,6 +102,16 @@ namespace Tryitter.Repository
             return user!;
 
         }
+        public string GetOwnerPost(int id)
+        {
+            var post = GetPost(id);
+            if (post == null)
+            {
+                return null!;
+            }
+            return Convert.ToString(post.UserId);
+
+        }
 
     }
 }

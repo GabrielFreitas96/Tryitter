@@ -16,6 +16,7 @@ namespace Tryitter.Repository
         bool DeletePost(int id);
         bool UpdatePost(int id, string content);
         User Login(string email, string password);
+        string GetOwnerPost(int id);
         IEnumerable<Post> GetPosts();
     }
 }
