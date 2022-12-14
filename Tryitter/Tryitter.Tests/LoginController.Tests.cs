@@ -25,7 +25,7 @@ public class LoginController_Tests
     }
     
     [Fact]
-    public void LoginValidUserShouldReturn200UnauthorizedStatus()
+    public void LoginValidUserShouldReturn200Status()
     {
         // Arrange
         
