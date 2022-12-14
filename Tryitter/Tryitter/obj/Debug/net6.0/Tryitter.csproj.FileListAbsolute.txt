@@ -136,3 +136,4 @@ C:\Users\leool\OneDrive\Área de Trabalho\c#\projetoemdupla\Tryitter\Tryitter\Tr
 C:\Users\leool\OneDrive\Área de Trabalho\c#\projetoemdupla\Tryitter\Tryitter\Tryitter\obj\Debug\net6.0\Tryitter.pdb
 C:\Users\leool\OneDrive\Área de Trabalho\c#\projetoemdupla\Tryitter\Tryitter\Tryitter\obj\Debug\net6.0\Tryitter.genruntimeconfig.cache
 C:\Users\leool\OneDrive\Área de Trabalho\c#\projetoemdupla\Tryitter\Tryitter\Tryitter\obj\Debug\net6.0\ref\Tryitter.dll
+C:\Users\leool\OneDrive\Área de Trabalho\c#\projetoemdupla\Tryitter\Tryitter\Tryitter\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
