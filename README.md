@@ -43,3 +43,8 @@ A api apresenta um C.R.U.D completo para usuários e posts, apresenta uma relaç
    - Executar o build e instalação dos pacotes
    - Rodar em release
    - UItilizar o Swagger para navegação
+   
+   >Caso se deseje utilizar o Visual Studio Code (Vs Code)
+   - No caminho Tryitter/Tryitter, rodar o comando dotnet restore para instalar os pacotes
+   -  executar o comando dotnet run Tryitter
+   -  acessar o navegador no caminho /swagger
