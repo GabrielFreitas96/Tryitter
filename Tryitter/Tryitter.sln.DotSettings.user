@@ -3,5 +3,6 @@
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;BDBA1F7A-75D9-45D5-8C3A-D00691A4231F/f:UserControllerTests.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;BDBA1F7A-75D9-45D5-8C3A-D00691A4231F/f:PostController.Tests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;BDBA1F7A-75D9-45D5-8C3A-D00691A4231F/f:LoginController.Tests.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
